@@ -48,9 +48,8 @@ body {
 
 # ---------------- LOAD MODEL ---------------- #
 
-joblib.dump(
-    similarity_df,
-    r"C:\Users\M B Chinmay\Desktop\Zynema\models\movie_similarity_small.pkl"
+similarity_df = joblib.load(
+    "models/movie_similarity_small.pkl"
 )
 
 # ---------------- TMDB API ---------------- #
