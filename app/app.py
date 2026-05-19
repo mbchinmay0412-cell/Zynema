@@ -48,7 +48,8 @@ body {
 
 # ---------------- LOAD MODEL ---------------- #
 
-similarity_df = joblib.load(
+joblib.dump(
+    similarity_df,
     r"C:\Users\M B Chinmay\Desktop\Zynema\models\movie_similarity_small.pkl"
 )
 
